@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>トルコランプ制作マニュアル - 図解付き完全ガイド</title>
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
+            color: #2d3436;
+        }
+        
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #e17055;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: #d63031;
+            border-left: 5px solid #e17055;
+            padding-left: 15px;
+            margin-top: 40px;
+        }
+        
+        h3 {
+            color: #e17055;
+            margin-top: 30px;
+        }
+        
+        .intro {
+            background: linear-gradient(135deg, #ffeaa7, #fdcb6e);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .time-box {
+            background: #74b9ff;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        
+        .warning {
+            background: #ff7675;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .warning::before {
+            content: "⚠️ ";
+            font-size: 1.2em;
+        }
+        
+        .tip {
+            background: #55a3ff;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .tip::before {
+            content: "💡 ";
+            font-size: 1.2em;
+        }
+        
+        .step {
+            background: #f8f9fa;
+            border: 2px solid #e17055;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            position: relative;
+        }
+        
+        .step-number {
+            background: #e17055;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            position: absolute;
+            top: -20px;
+            left: 20px;
+        }
+        
+        .materials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .material-item {
+            background: #f1f2f6;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            border: 2px solid #e17055;
+        }
+        
+        .lamp-diagram {
+            width: 100%;
+            max-width: 400px;
+            margin: 20px auto;
+            display: block;
+        }
+        
+        .process-flow {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 30px 0;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .process-step {
+            background: #fdcb6e;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            flex: 1;
+            min-width: 120px;
+            font-weight: bold;
+        }
+        
+        .arrow {
+            font-size: 2em;
+            color: #e17055;
+        }
+        
+        .color-palette {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        
+        .color-circle {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 3px solid #2d3436;
+        }
+        
+        .troubleshooting {
+            background: #f8f9fa;
+            border-left: 5px solid #ff7675;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        th, td {
+            border: 1px solid #e17055;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        th {
+            background: #e17055;
+            color: white;
+        }
+        
+        tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+        
+        .completion {
+            background: linear-gradient(135deg, #00b894, #55a3ff);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 30px 0;
+            font-size: 1.2em;
+        }
+        
+        @media (max-width: 600px) {
+            .process-flow {
+                flex-direction: column;
+            }
+            .arrow {
+                transform: rotate(90deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏮 トルコランプ制作マニュアル</h1>
+        <div class="intro">
+            <h2 style="margin-top: 0; border: none; padding: 0;">初心者向け図解完全ガイド</h2>
+            <p>色とりどりのモザイクガラスを組み合わせて、美しいトルコランプを作りましょう</p>
+        </div>
+        
+        <div class="time-box">
+            ⏱️ 所要時間：約3〜4時間（乾燥時間を除く）
+        </div>
+
+        <!-- 完成イメージ図 -->
+        <h2>🎯 完成イメージ</h2>
+        <svg class="lamp-diagram" viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+            <!-- ランプベース -->
+            <ellipse cx="150" cy="350" rx="60" ry="20" fill="#8b4513" stroke="#654321" stroke-width="2"/>
+            
+            <!-- ランプ本体 -->
+            <path d="M 90 350 Q 90 200 150 150 Q 210 200 210 350" fill="none" stroke="#2d3436" stroke-width="3"/>
+            
+            <!-- モザイクガラス -->
+            <rect x="95" y="320" width="15" height="15" fill="#e74c3c" transform="rotate(15 102 327)"/>
+            <rect x="110" y="315" width="12" height="12" fill="#3498db" transform="rotate(-10 116 321)"/>
+            <rect x="125" y="325" width="18" height="10" fill="#f39c12" transform="rotate(25 134 330)"/>
+            <rect x="140" y="310" width="14" height="16" fill="#27ae60" transform="rotate(-15 147 318)"/>
+            <rect x="155" y="320" width="16" height="12" fill="#9b59b6" transform="rotate(20 163 326)"/>
+            <rect x="170" y="315" width="13" height="15" fill="#e67e22" transform="rotate(-5 176 322)"/>
+            <rect x="185" y="325" width="15" height="13" fill="#1abc9c" transform="rotate(30 192 331)"/>
+            
+            <rect x="100" y="280" width="16" height="14" fill="#f1c40f" transform="rotate(-20 108 287)"/>
+            <rect x="115" y="275" width="14" height="16" fill="#e74c3c" transform="rotate(10 122 283)"/>
+            <rect x="130" y="285" width="12" height="12" fill="#3498db" transform="rotate(-25 136 291)"/>
+            <rect x="145" y="270" width="18" height="11" fill="#27ae60" transform="rotate(15 154 275)"/>
+            <rect x="160" y="280" width="15" height="14" fill="#9b59b6" transform="rotate(-10 167 287)"/>
+            <rect x="175" y="275" width="13" height="17" fill="#e67e22" transform="rotate(25 181 283)"/>
+            <rect x="190" y="285" width="14" height="13" fill="#1abc9c" transform="rotate(-15 197 291)"/>
+            
+            <!-- 電球 -->
+            <circle cx="150" cy="180" r="25" fill="#fff3cd" stroke="#ffc107" stroke-width="2"/>
+            <path d="M 130 180 Q 150 160 170 180" stroke="#ffc107" stroke-width="1" fill="none"/>
+            <path d="M 135 185 Q 150 170 165 185" stroke="#ffc107" stroke-width="1" fill="none"/>
+            
+            <!-- 光の表現 -->
+            <circle cx="150" cy="180" r="35" fill="none" stroke="#fff3cd" stroke-width="1" opacity="0.5"/>
+            <circle cx="150" cy="180" r="45" fill="none" stroke="#fff3cd" stroke-width="1" opacity="0.3"/>
+            
+            <!-- コード -->
+            <path d="M 150 350 Q 120 370 100 390" stroke="#2d3436" stroke-width="3" fill="none"/>
+        </svg>
+
+        <h2>📦 必要な材料</h2>
+        <div class="materials-grid">
+            <div class="material-item">
+                <svg width="60" height="60" viewBox="0 0 100 100">
+                    <circle cx="50" cy="70" r="25" fill="#ddd" stroke="#888" stroke-width="2"/>
+                    <path d="M 25 70 Q 25 30 50 20 Q 75 30 75 70" fill="none" stroke="#888" stroke-width="3"/>
+                </svg>
+                <br><strong>ランプベース</strong><br>
+                球型または円錐型
+            </div>
+            <div class="material-item">
+                <svg width="60" height="60" viewBox="0 0 100 100">
+                    <rect x="20" y="30" width="15" height="15" fill="#e74c3c"/>
+                    <rect x="40" y="35" width="12" height="12" fill="#3498db"/>
+                    <rect x="60" y="30" width="18" height="10" fill="#f39c12"/>
+                    <rect x="25" y="50" width="14" height="16" fill="#27ae60"/>
+                    <rect x="45" y="55" width="16" height="12" fill="#9b59b6"/>
+                    <rect x="65" y="50" width="13" height="15" fill="#e67e22"/>
+                </svg>
+                <br><strong>モザイクガラス</strong><br>
+                様々な色・サイズ
+            </div>
+            <div class="material-item">
+                <svg width="60" height="60" viewBox="0 0 100 100">
+                    <rect x="30" y="20" width="40" height="60" fill="#f8f9fa" stroke="#2d3436" rx="5"/>
+                    <rect x="40" y="30" width="20" height="40" fill="#74b9ff"/>
+                    <text x="50" y="55" text-anchor="middle" font-size="8" fill="white">接着剤</text>
+                </svg>
+                <br><strong>接着剤</strong><br>
+                透明タイプ
+            </div>
+            <div class="material-item">
+                <svg width="60" height="60" viewBox="0 0 100 100">
+                    <circle cx="50" cy="40" r="15" fill="#fff3cd" stroke="#ffc107" stroke-width="2"/>
+                    <path d="M 40 50 L 45 55 L 50 50 L 55 55 L 60 50" stroke="#2d3436" stroke-width="2" fill="none"/>
+                    <rect x="45" y="55" width="10" height="25" fill="#2d3436"/>
+                </svg>
+                <br><strong>電球・ソケット</strong><br>
+                LED推奨
+            </div>
+        </div>
+
+        <h2>🔧 必要な道具</h2>
+        <div class="materials-grid">
+            <div class="material-item">
+                <svg width="50" height="50" viewBox="0 0 100 100">
+                    <path d="M 20 30 L 80 30 L 85 40 L 75 70 L 25 70 L 15 40 Z" fill="#c0392b" stroke="#922b21"/>
+                    <circle cx="35" cy="50" r="8" fill="#2d3436"/>
+                    <circle cx="65" cy="50" r="8" fill="#2d3436"/>
+                </svg>
+                <br><strong>ニッパー</strong>
+            </div>
+            <div class="material-item">
+                <svg width="50" height="50" viewBox="0 0 100 100">
+                    <path d="M 30 20 L 70 20 L 68 80 L 32 80 Z" fill="#3498db" stroke="#2980b9"/>
+                    <path d="M 25 25 L 75 25 L 73 75 L 27 75 Z" fill="none" stroke="#2980b9" stroke-width="2"/>
+                </svg>
+                <br><strong>保護メガネ</strong>
+            </div>
+            <div class="material-item">
+                <svg width="50" height="50" viewBox="0 0 100 100">
+                    <path d="M 20 40 Q 20 20 40 20 L 60 20 Q 80 20 80 40 L 80 70 Q 80 80 70 80 L 30 80 Q 20 80 20 70 Z" fill="#27ae60" stroke="#1e8449"/>
+                    <circle cx="35" cy="45" r="6" fill="#2d3436"/>
+                    <circle cx="65" cy="45" r="6" fill="#2d3436"/>
+                </svg>
+                <br><strong>ゴム手袋</strong>
+            </div>
+            <div class="material-item">
+                <svg width="50" height="50" viewBox="0 0 100 100">
+                    <ellipse cx="50" cy="60" rx="30" ry="15" fill="#f39c12" stroke="#e67e22"/>
+                    <rect x="35" y="45" width="30" height="20" fill="#f39c12" stroke="#e67e22"/>
+                </svg>
+                <br><strong>スポンジ</strong>
+            </div>
+        </div>
+
+        <div class="warning">
+            <strong>安全に関する注意事項</strong><br>
+            • 保護メガネとゴム手袋を必ず着用<br>
+            • ガラス片で怪我をしないよう注意<br>
+            • 換気の良い場所で作業<br>
+            • お子様の手の届かない場所で作業
+        </div>
+
+        <h2>🎨 制作手順</h2>
+
+        <div class="process-flow">
+            <div class="process-step">デザイン決定</div>
+            <div class="arrow">→</div>
+            <div class="process-step">ガラスカット</div>
+            <div class="arrow">→</div>
+            <div class="process-step">貼り付け</div>
+            <div class="arrow">→</div>
+            <div class="process-step">目地入れ</div>
+            <div class="arrow">→</div>
+            <div class="process-step">完成</div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">1</div>
+            <h3>デザインの決定（15分）</h3>
+            <p><strong>色の組み合わせを決める</strong></p>
+            
+            <p>🎨 おすすめ色組み合わせ：</p>
+            <div style="display: flex; gap: 20px; margin: 15px 0; flex-wrap: wrap;">
+                <div style="text-align: center;">
+                    <div>暖色系</div>
+                    <div class="color-palette">
+                        <div class="color-circle" style="background: #e74c3c;"></div>
+                        <div class="color-circle" style="background: #e67e22;"></div>
+                        <div class="color-circle" style="background: #f39c12;"></div>
+                    </div>
+                </div>
+                <div style="text-align: center;">
+                    <div>寒色系</div>
+                    <div class="color-palette">
+                        <div class="color-circle" style="background: #3498db;"></div>
+                        <div class="color-circle" style="background: #27ae60;"></div>
+                        <div class="color-circle" style="background: #9b59b6;"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tip">
+                初心者の方は<strong>ランダムモザイク</strong>がおすすめ！3〜5色程度で統一感を出しましょう。
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">2</div>
+            <h3>ガラスのカットと選別（30分）</h3>
+            
+            <svg width="100%" height="150" viewBox="0 0 400 150" style="background: #f8f9fa; border-radius: 10px; margin: 15px 0;">
+                <!-- カット前のガラス -->
+                <rect x="50" y="50" width="60" height="40" fill="#e74c3c" stroke="#c0392b" stroke-width="2"/>
+                <text x="80" y="75" text-anchor="middle" font-size="12" fill="white">大きなガラス</text>
+                
+                <!-- ニッパー -->
+                <path d="M 140 60 L 160 60 L 165 70 L 155 90 L 145 90 L 135 70 Z" fill="#c0392b" stroke="#922b21"/>
+                
+                <!-- 矢印 -->
+                <path d="M 180 70 L 200 70 M 195 65 L 200 70 L 195 75" stroke="#2d3436" stroke-width="2" fill="none"/>
+                
+                <!-- カット後のガラス -->
+                <rect x="220" y="40" width="15" height="15" fill="#e74c3c" stroke="#c0392b"/>
+                <rect x="240" y="45" width="12" height="12" fill="#e74c3c" stroke="#c0392b"/>
+                <rect x="255" y="42" width="18" height="10" fill="#e74c3c" stroke="#c0392b"/>
+                <rect x="225" y="60" width="14" height="16" fill="#e74c3c" stroke="#c0392b"/>
+                <rect x="245" y="65" width="16" height="12" fill="#e74c3c" stroke="#c0392b"/>
+                <text x="275" y="95" font-size="12" fill="#2d3436">1〜2cm角に<br/>カット</text>
+            </svg>
+            
+            <div class="tip">
+                大小様々なサイズを作ると立体感が出ます。切りすぎ注意：後で足りなくなることがあります。
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">3</div>
+            <h3>ランプベースの準備（10分）</h3>
+            
+            <svg width="100%" height="120" viewBox="0 0 300 120" style="background: #f8f9fa; border-radius: 10px; margin: 15px 0;">
+                <!-- 清拭作業 -->
+                <ellipse cx="80" cy="90" rx="40" ry="15" fill="#ddd" stroke="#888"/>
+                <path d="M 40 90 Q 40 40 80 30 Q 120 40 120 90" fill="none" stroke="#888" stroke-width="3"/>
+                <path d="M 60 60 Q 80 50 100 60" stroke="#74b9ff" stroke-width="3"/>
+                <text x="80" y="110" text-anchor="middle" font-size="10">清拭</text>
+                
+                <!-- ソケット取り付け -->
+                <ellipse cx="220" cy="90" rx="40" ry="15" fill="#ddd" stroke="#888"/>
+                <path d="M 180 90 Q 180 40 220 30 Q 260 40 260 90" fill="none" stroke="#888" stroke-width="3"/>
+                <rect x="210" y="25" width="20" height="15" fill="#2d3436"/>
+                <circle cx="220" cy="40" r="8" fill="#fff3cd" stroke="#ffc107"/>
+                <text x="220" y="110" text-anchor="middle" font-size="10">ソケット設置</text>
+            </svg>
+        </div>
+
+        <div class="step">
+            <div class="step-number">4</div>
+            <h3>モザイクガラスの貼り付け（90分）</h3>
+            
+            <svg width="100%" height="200" viewBox="0 0 400 200" style="background: #f8f9fa; border-radius: 10px; margin: 15px 0;">
+                <!-- ベース -->
+                <ellipse cx="200" cy="170" rx="60" ry="20" fill="#ddd" stroke="#888"/>
+                <path d="M 140 170 Q 140 80 200 60 Q 260 80 260 170" fill="none" stroke="#888" stroke-width="3"/>
+                
+                <!-- 接着剤 -->
+                <circle cx="180" cy="120" r="3" fill="#74b9ff"/>
+                <path d="M 175 115 Q 180 110 185 115" stroke="#74b9ff" stroke-width="1"/>
+                
+                <!-- 貼り付け順序の矢印 -->
+                <path d="M 160 150 Q 170 140 180 130" stroke="#e74c3c" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+                <text x="150" y="165" font-size="10" fill="#e74c3c">下から上へ</text>
+                
+                <!-- ガラス片 -->
+                <rect x="175" y="125" width="12" height="12" fill="#e74c3c" opacity="0.8"/>
+                <rect x="190" y="130" width="15" height="10" fill="#3498db" opacity="0.8"/>
+                <rect x="210" y="125" width="13" height="14" fill="#f39c12" opacity="0.8"/>
+                
+                <!-- 隙間の表示 -->
+                <line x1="187" y1="130" x2="190" y2="130" stroke="#2d3436" stroke-width="1"/>
+                <text x="188" y="145" font-size="8" text-anchor="middle">2-3mm隙間</text>
+                
+                <defs>
+                    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                        <polygon points="0 0, 10 3.5, 0 7" fill="#e74c3c"/>
+                    </marker>
+                </defs>
+            </svg>
+            
+            <div class="tip">
+                <strong>貼り付けのコツ：</strong><br>
+                • ピンセットを活用して細かい調整<br>
+                • 色のバランスを見ながら、離れて全体を確認<br>
+                • 隙間は2〜3mm空ける（目地材用）
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">5</div>
+            <h3>乾燥（30分）</h3>
+            
+            <svg width="100%" height="100" viewBox="0 0 300 100" style="background: #f8f9fa; border-radius: 10px; margin: 15px 0;">
+                <ellipse cx="150" cy="80" rx="50" ry="15" fill="#ddd" stroke="#888"/>
+                <path d="M 100 80 Q 100 30 150 20 Q 200 30 200 80" fill="none" stroke="#888" stroke-width="3"/>
+                
+                <!-- 完成したモザイク -->
+                <rect x="120" y="50" width="12" height="12" fill="#e74c3c"/>
+                <rect x="135" y="55" width="15" height="10" fill="#3498db"/>
+                <rect x="155" y="50" width="13" height="14" fill="#f39c12"/>
+                <rect x="170" y="55" width="12" height="12" fill="#27ae60"/>
+                
+                <!-- 時計アイコン -->
+                <circle cx="50" cy="40" r="20" fill="#74b9ff" stroke="#0984e3" stroke-width="2"/>
+                <line x1="50" y1="40" x2="50" y2="30" stroke="white" stroke-width="2"/>
+                <line x1="50" y1="40" x2="58" y2="40" stroke="white" stroke-width="2"/>
+                <text x="50" y="70" text-anchor="middle" font-size="12">30分放置</text>
+            </svg>
+            
+            <div class="warning">
+                触らずに30分以上放置してください。接着剤が透明になったら乾燥完了です。
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">6</div>
+            <h3>目地入れ（45分）</h3>
+            
+            <svg width="100%" height="150" viewBox="0 0 400 150" style="background: #f8f9fa; border-radius: 10px; margin: 15px 0;">
+                <!-- 目地材の準備 -->
+                <rect x="50" y="40" width="30" height="40" fill="#bdc3c7" rx="5"/>
+                <text x="65" y="90" text-anchor="middle" font-size="10">目地材</text>
+                
+                <!-- 水 -->
+                <rect x="100" y="50" width="20" height="30" fill="#74b9ff" rx="3"/>
+                <text x="110" y="90" text-anchor="middle" font-size="10">水</text>
+                
+                <!-- 混合 -->
+                <text x="140" y="70" font-size="20">+</text>
+                
+                <!-- 混合後 -->
+                <ellipse cx="180" cy="70" rx="25" ry="15" fill="#95a5a6"/>
+                <text x="180" y="90" text-anchor="middle" font-size="10">ペースト状</text>
+                
+                <!-- 塗布作業 -->
+                <ellipse cx="300" cy="120" rx="40" ry="15" fill="#ddd" stroke="#888"/>
+                <path d="M 260 120 Q 260 70 300 60 Q 340 70 340 120" fill="none" stroke="#888" stroke-width="3"/>
+                
+                <!-- 手の動き -->
+                <path d="M 280 90 Q 290 85 300 90 Q 310 85 320 90" stroke="#e74c3c" stroke-width="2" fill="none"/>
+                <text x="300" y="50" text-anchor="middle" font-size="10">指で押し込む</text>
+                
+                <!-- 目地材 -->
+                <rect x="285" y="85" width="12" height="12" fill="#e74c3c"/>
+                <path d="M 290 97 L 295 102 L 300 97 L 305 102 L 310 97" stroke="#95a5a6" stroke-width="3"/>
+                <rect x="305" y="90" width="15" height="10" fill="#3498db"/>
+            </svg>
+            
+            <div class="tip">
+                <strong>目地入れのコツ：</strong><br>
+                • 目地材と水を2:1の割合で混合<br>
+                • 斜めに塗布すると気泡が入りにくい<br>
+                • 湿らせたスポンジでガラス表面を優しく拭く
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">7</div>
+            <h3>仕上げの清拭（15分）</h3>
+            
+            <svg width="100%" height="120" viewBox="0 0 300 120" style="background: #f8f9fa; border-radius: 10px; margin: 15px 0;">
+                <ellipse cx="150" cy="100" rx="50" ry="15" fill="#ddd" stroke="#888"/>
+                <path d="M 100 100 Q 100 50 150 40 Q 200 50 200 100" fill="none" stroke="#888" stroke-width="3"/>
+                
+                <!-- 完成したモザイク -->
+                <rect x="125" y="70" width="12" height="12" fill="#e74c3c"/>
+                <path d="M 131 70 L 137 76 L 131 82 L 125 76 Z" stroke="#95a5a6" stroke-width="2" fill="none"/>
+                <rect x="140" y="75" width="15" height="10" fill="#3498db"/>
+                <path d="M 147 75 L 155 80 L 147 85 L 140 80 Z" stroke="#95a5a6" stroke-width="2" fill="none"/>
+                <rect x="160" y="70" width="13" height="14" fill="#f39c12"/>
+                <path d="M 166 70 L 173 77 L 166 84 L 160 77 Z" stroke="#95a5a6" stroke-width="2" fill="none"/>
+                
+                <!-- スポンジ -->
+                <ellipse cx="80" cy="60" rx="15" ry="8" fill="#f39c12"/>
+                <path d="M 75 55 Q 80 50 85 55" stroke="#74b9ff" stroke-width="2"/>
+                <text x="80" y="45" text-anchor="middle" font-size="10">湿らせたスポンジ</text>
+                
+                <!-- キラキラ効果 -->
+                <text x="130" y="65" font-size="12" fill="#f1c40f">✨</text>
+                <text x="175" y="65" font-size="12" fill="#f1c40f">✨</text>
+            </svg>
+        </div>
+
+        <div class="step">
+            <div class="step-number">8</div>
+            <h3>完全乾燥（24時間）</h3>
+            
+            <svg width="100%" height="100" viewBox="0 0 300 100" style="background: #f8f9fa; border-radius: 10px; margin: 15px 0;">
+                <!-- 完成ランプ -->
+                <ellipse cx="150" cy="80" rx="50" ry="15" fill="#8b4513" stroke="#654321"/>
+                <path d="M 100 80 Q 100 30 150 20 Q 200 30 200 80" fill="none" stroke="#2d3436" stroke-width="3"/>
+                
+                <!-- 美しいモザイク -->
+                <rect x="125" y="50" width="12" height="12" fill="#e74c3c"/>
+                <rect x="140" y="55" width="15" height="10" fill="#3498db"/>
+                <rect x="160" y="50" width="13" height="14" fill="#f39c12"/>
+                <rect x="175" y="55" width="12" height="12" fill="#27ae60"/>
+                
+                <!-- 24時間表示 -->
+                <circle cx="50" cy="40" r="20" fill="#e74c3c"/>
+                <text x="50" y="35" text-anchor="middle" font-size="12" fill="white">24</text>
+                <text x="50" y="48" text-anchor="middle" font-size="10" fill="white">時間</text>
+            </svg>
+            
+            <div class="warning">
+                24時間触らずに完全乾燥させてください。風通しの良い場所に置きましょう。
+            </div>
+        </div>
+
+        <h2>🔧 トラブルシューティング</h2>
+        <div class="troubleshooting">
+            <table>
+                <tr>
+                    <th>問題</th>
+                    <th>原因</th>
+                    <th>解決方法</th>
+                </tr>
+                <tr>
+                    <td>ガラスが剥がれる</td>
+                    <td>接着剤不足、油分汚れ</td>
+                    <td>該当箇所を清拭し直してから再接着</td>
+                </tr>
+                <tr>
+                    <td>目地がひび割れる</td>
+                    <td>乾燥が早すぎる</td>
+                    <td>霧吹きで軽く湿らせながら作業</td>
+                </tr>
+                <tr>
+                    <td>色のバランスが悪い</td>
+                    <td>一色に偏った配置</td>
+                    <td>全体を見ながら調整、遠くから確認</td>
+                </tr>
+            </table>
+        </div>
+
+        <h2>⏰ 制作時間の目安</h2>
+        <table>
+            <tr>
+                <th>工程</th>
+                <th>所要時間</th>
+                <th>備考</th>
+            </tr>
+            <tr>
+                <td>デザイン決定</td>
+                <td>15分</td>
+                <td>じっくり検討</td>
+            </tr>
+            <tr>
+                <td>ガラスカット</td>
+                <td>30分</td>
+                <td>安全第一</td>
+            </tr>
+            <tr>
+                <td>貼り付け作業</td>
+                <td>90分</td>
+                <td>最も時間のかかる工程</td>
+            </tr>
+            <tr>
+                <td>目地入れ</td>
+                <td>45分</td>
+                <td>慎重に作業</td>
+            </tr>
+            <tr>
+                <td>仕上げ清拭</td>
+                <td>15分</td>
+                <td>美しさの決め手</td>
+            </tr>
+            <tr>
+                <td><strong>合計</strong></td>
+                <td><strong>約3.5時間</strong></td>
+                <td>乾燥時間除く</td>
+            </tr>
+        </table>
+
+        <div class="completion">
+            <h2 style="margin-top: 0; color: white;">🎉 完成おめでとうございます！</h2>
+            <p>あなただけのオリジナルトルコランプが完成しました！<br>
+            電球を点けて、美しい光の演出をお楽しみください。</p>
+            
+            <svg width="200" height="150" viewBox="0 0 200 150" style="margin: 20px 0;">
+                <!-- 完成ランプ（光っている状態） -->
+                <ellipse cx="100" cy="130" rx="40" ry="12" fill="#8b4513"/>
+                <path d="M 60 130 Q 60 50 100 30 Q 140 50 140 130" fill="none" stroke="#2d3436" stroke-width="3"/>
+                
+                <!-- 美しいモザイク -->
+                <rect x="75" y="100" width="10" height="10" fill="#e74c3c"/>
+                <rect x="87" y="105" width="12" height="8" fill="#3498db"/>
+                <rect x="102" y="100" width="11" height="12" fill="#f39c12"/>
+                <rect x="115" y="105" width="10" height="10" fill="#27ae60"/>
+                
+                <!-- 光る電球 -->
+                <circle cx="100" cy="60" r="20" fill="#fff3cd" stroke="#ffc107" stroke-width="2"/>
+                
+                <!-- 光の効果 -->
+                <circle cx="100" cy="60" r="30" fill="none" stroke="#fff3cd" stroke-width="2" opacity="0.7"/>
+                <circle cx="100" cy="60" r="40" fill="none" stroke="#fff3cd" stroke-width="1" opacity="0.5"/>
+                <circle cx="100" cy="60" r="50" fill="none" stroke="#fff3cd" stroke-width="1" opacity="0.3"/>
+                
+                <!-- キラキラ効果 -->
+                <text x="70" y="80" font-size="16" fill="#f1c40f">✨</text>
+                <text x="130" y="85" font-size="16" fill="#f1c40f">✨</text>
+                <text x="85" y="70" font-size="12" fill="#f1c40f">✨</text>
+                <text x="115" y="75" font-size="12" fill="#f1c40f">✨</text>
+            </svg>
+            
+            <p><strong>素敵なトルコランプ作りをお楽しみください！</strong></p>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px; font-style: italic; color: #666;">
+            ワークショップでご不明な点がございましたら、お気軽にスタッフまでお声かけください。
+        </div>
+    </div>
+</body>
+</html>
